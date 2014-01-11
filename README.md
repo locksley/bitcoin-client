@@ -4,6 +4,7 @@ Changed namespacing from Bitcoin to Bitcoind
 
 
 ```ruby
-api = Bitcoind::Api.new("user", "pass")
+
+api = Bitcoind::API.new("user", "pass")
 api.request("getinfo")
 ```
