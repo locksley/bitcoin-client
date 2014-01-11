@@ -9,17 +9,17 @@ module RPCServiceHelper
           name
         end
       end
-      
+
       define_method :result do |*args|
-        FakeWeb.register_uri(:post, "http://user:pass@localhost:8332", :response => fixture(fixture_name))
+        FakeWeb.register_uri(:post, "http://user:pass@localhost:18332", :response => fixture(fixture_name))
         subject.send(name, *args)
       end
-      
+
       class << self
         def fixture_suffix
           @fixture_suffix ||= ""
         end
-        
+
         def context(desc, &block)
           super desc do
             fixture_suffix.concat desc
