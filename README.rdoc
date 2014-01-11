@@ -1,3 +1,9 @@
 Bitcoin-Client fork
 
 Changed namespacing from Bitcoin to Bitcoind
+
+
+```ruby
+api = Bitcoind::Api.new("user", "pass")
+api.request("getinfo")
+```
