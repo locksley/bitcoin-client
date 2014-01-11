@@ -5,5 +5,4 @@ module Bitcoind
   autoload :Errors, 'bitcoind/errors'
   autoload :Version,'bitcoind/version'
   autoload :VERSION,'bitcoind/version'
-
 end

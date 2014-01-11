@@ -4,7 +4,7 @@ require "bitcoind/version"
 
 Gem::Specification.new do |s|
   s.licenses    = [ 'MIT' ]
-  s.name        = "bitcoin-client"
+  s.name        = "bitcoind-ruby"
   s.version     = Bitcoind::VERSION
   s.authors     = ["Colin MacKenzie IV"]
   s.email       = ["sinisterchipmunk@gmail.com"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
                   "https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list and "+
                   "lets you set options such as the host and port number, and whether to use SSL."
 
-  s.rubyforge_project = "bitcoin-client"
+  # s.rubyforge_project = "bitcoin-client"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
